@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Tracker Dashboard</title> 
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="icon" 
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+    
+</head>
+<body>
+    <header>
+        <h1>Live Crypto Price Tracker</h1>
+    </header>
+
+    <main>
+        <section class="search-container">
+            <input type="text" id="searchInput" placeholder="Search Crypto" />
+        </section>
+
+        <section id="cryptoTable" class="crypto-table">
+            <div class="table-header">
+                <div class="col-name">NAME</div>
+                <div class="col-symbol">SYMBOL</div>
+                <div class="col-price">PRICE</div>
+                <div class="col-change">24H CHANGE</div>
+                <div class="col-volume">24H VOLUME</div>
+                <div class="col-mktcap">MARKET CAP</div>
+            </div>
+
+            <div id="cryptoContainer"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
